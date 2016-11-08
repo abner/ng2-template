@@ -9,4 +9,8 @@ if (environment.production) {
   enableProdMode();
 }
 
+window['$'] = window['jQuery'] = require('jquery');
+
+require('bootstrap-sass');
+
 platformBrowserDynamic().bootstrapModule(AppModule);
